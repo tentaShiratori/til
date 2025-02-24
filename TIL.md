@@ -4,3 +4,11 @@
   - パッケージのインストールはdocker volume内に行う
   - testの実行が44sから2sに
 - 並行性はマイクロサービスと効率的なツールの実行において重要そう
+- port削除
+  - FIND: パラメータの書式が違います→https://qiita.com/yoshi_iwa/items/f4a19bc1a37ced40cf74
+  -  netstat -aon | find "8080"
+  -  taskkill /pid 12312
+- useDerivedValue内で関数を使いたい場合は"worklet";が必要
+  - https://docs.swmansion.com/react-native-reanimated/docs/2.x/fundamentals/worklets/
+  - するとUIスレッドで実行できるようになる
+    - バケモン過ぎない？
