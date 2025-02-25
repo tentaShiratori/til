@@ -12,3 +12,9 @@
   - https://docs.swmansion.com/react-native-reanimated/docs/2.x/fundamentals/worklets/
   - するとUIスレッドで実行できるようになる
     - バケモン過ぎない？
+- date-fns大きいなと思ってたら使い方が適してなかったっぽい
+  - https://how-to.dev/what-is-the-size-impact-of-importing-multiple-methods-from-date-fns
+  - https://how-to.dev/dayjs-vs-date-fns
+- jsのbenchmarkはvitestにも使われてるtinybenchがよさそう
+  - https://github.com/tinylibs/tinybench?tab=readme-ov-file
+- 型のテストはexpect-type→https://github.com/mmkal/expect-type
