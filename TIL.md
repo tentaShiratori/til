@@ -17,4 +17,9 @@
   - https://how-to.dev/dayjs-vs-date-fns
 - jsのbenchmarkはvitestにも使われてるtinybenchがよさそう
   - https://github.com/tinylibs/tinybench?tab=readme-ov-file
+  - bunはmitataを１番目に紹介してる https://github.com/evanwashere/mitata
+    - https://bun.sh/docs/project/benchmarking
 - 型のテストはexpect-type→https://github.com/mmkal/expect-type
+- webpack-bundle-analyzerが壊れたら、原因っぽいパッケージをexternal化してあげればよさそう(根本まで掘るといけそう)
+- Intl.DateTimeFormatは重い
+- date-fns.lightFormatの方がdayjs.formatより早い(ただしdate-fnsにはtimezoneはない)
