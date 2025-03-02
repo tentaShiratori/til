@@ -23,3 +23,7 @@
 - webpack-bundle-analyzerが壊れたら、原因っぽいパッケージをexternal化してあげればよさそう(根本まで掘るといけそう)
 - Intl.DateTimeFormatは重い
 - date-fns.lightFormatの方がdayjs.formatより早い(ただしdate-fnsにはtimezoneはない)
+- date-fns vs dayjs比較
+  - dayjsに強制的にbundleされる機能をフルに使うならdayjsの方がbundleサイズが小さい。
+  - それより使う機能が少ないならdate-fnsの方が小さくなりうる(どのくらい機能を少なくできるかは要件次第なので未検証)
+  - 実行速度は常にdate-fnsの方が速い
